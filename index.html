@@ -7,12 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="resources/Maimur-s-servere-4-4-2023.png"></a>
             <div class ="nav-links">
+                <i class="fa fa-times-circle-o" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>                        
@@ -20,7 +22,8 @@
                     <li><a href="">BLOG</a></li>                        
                     <li><a href="">CONTACT</a></li>                            
                 </ul>
-            </div>    
+            </div>   
+            <i class="fa fa-bars" onclick="showMenu()"></i 
         </nav>
     <div class="text-box">
         <h1>What are slaves?</h1>
@@ -31,6 +34,19 @@
         <a href="" class="hero-btn">Visit Us to know More!</a>
     </div>    
     </section>
+
+    <!--------JavaScript for Toggle Menu-------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
     <h1>Maimur Siddiqui</h1>
     <p>we must find meaning in life</p>
     <p> maimur attempts front end</p>
