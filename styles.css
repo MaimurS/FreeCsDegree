@@ -309,3 +309,44 @@ h3{
 .fa-heart-o{
     color: #ff77ff;
 }
+
+/* --------------about */
+.sub-header{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(resources/Instooo.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header p{
+    font-size: 20px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
+}
+.about-col h1{
+    padding-top: 15px 0 25px;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+.pink-btn{
+    border: 1px solid #ff77ff;
+    background: transparent;
+    color: #ff77ff;
+}
+.pink-btn:hover{
+    color: #fff;
+}
